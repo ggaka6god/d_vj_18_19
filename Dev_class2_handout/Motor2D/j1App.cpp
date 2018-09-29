@@ -61,20 +61,27 @@ bool j1App::Awake()
 	// If everything goes well, load the top tag inside the xml_node property
 	// created in the last TODO
 
-	bool ret = true;
+	bool ret = LoadConfig();
 
-	p2List_item<j1Module*>* item;
-	item = modules.start;
+	title.create(app_config.child("title").child_value());
+	title.create(app_config.child("organization").child_value());
 
-	while(item != NULL && ret == true)
+	if (ret == true)
 	{
-		// TODO 6: Add a new argument to the Awake method to receive a pointer to a xml node.
-		// If the section with the module name exist in config.xml, fill the pointer with the address of a valid xml_node
-		// that can be used to read all variables from that section. Send nullptr if the section does not exist in config.xml
+		p2List_item<j1Module*>* item;
+		item = modules.start;
 
-		ret = item->data->Awake();
-		item = item->next;
+		while (item != NULL && ret == true)
+		{
+			// TODO 6: Add a new argument to the Awake method to receive a pointer to a xml node.
+			// If the section with the module name exist in config.xml, fill the pointer with the address of a valid xml_node
+			// that can be used to read all variables from that section. Send nullptr if the section does not exist in config.xml
+
+			ret = item->data->Awake();
+			item = item->next;
+		}
 	}
+	
 
 	return ret;
 }
@@ -114,6 +121,26 @@ bool j1App::Update()
 		ret = PostUpdate();
 
 	FinishUpdate();
+	return ret;
+}
+
+bool j1App::LoadConfig()
+{
+	bool ret = true;
+
+	pugi::xml_parse_result result = config_file.load_file("config.xml");
+
+	if (result == NULL)
+	{
+		LOG("Unexpected error: %s", result.description());
+		ret = false;
+	}
+	else
+	{
+		config = config_file.child("config");
+		app_config = config.child("app");
+	}
+
 	return ret;
 }
 

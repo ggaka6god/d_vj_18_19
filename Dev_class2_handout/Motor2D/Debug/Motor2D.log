@@ -1,0 +1,12 @@
+﻿  j1Main.cpp
+  j1App.cpp
+  j1Audio.cpp
+  j1Input.cpp
+  j1Scene.cpp
+  p2Log.cpp
+  j1Render.cpp
+  j1Textures.cpp
+  j1Window.cpp
+  pugixml.cpp
+  Generando código...
+  Motor2D.vcxproj -> C:\Users\Arnau\Documents\GitHub\d_vj_18_19\Dev_class2_handout\Debug\Motor 2D.exe

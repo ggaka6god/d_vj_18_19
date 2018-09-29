@@ -44,6 +44,8 @@ public:
 
 private:
 
+	bool LoadConfig();
+
 	// Call modules before each loop iteration
 	void PrepareUpdate();
 
@@ -75,13 +77,18 @@ private:
 	p2List<j1Module*>	modules;
 	uint				frames;
 	float				dt;
-
+	pugi::xml_document config_file;
+	pugi::xml_node config;
+	pugi::xml_node app_config;
 	// TODO 2: Create two new variables from pugui namespace:
 	// a xml_document to store the while config file and
 	// a xml_node to read specific branches of the xml
 
 	int					argc;
 	char**				args;
+
+	p2SString title;
+	p2SString organization;
 };
 
 extern j1App* App; 
