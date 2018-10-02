@@ -14,7 +14,7 @@ public:
 
 	~String();
 
-
+	String operator= (const String & string);
 
 private:
 	char* str;

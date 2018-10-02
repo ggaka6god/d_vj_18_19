@@ -2,10 +2,7 @@
 
 
 
-String::String() :str(nullptr), memory_allocated(0)
-{
-
-}
+String::String() :str(nullptr), memory_allocated(0) {}
 
 String::String(const char * str)
 {
@@ -31,5 +28,14 @@ String::~String()
 	if (str != NULL)
 		delete[] str;
 
+}
+
+String String::operator=(const String & string)
+{
+
+	delete[] str;
+	//Acabar
+
+	return String();
 }
 
