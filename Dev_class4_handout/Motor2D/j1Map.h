@@ -10,9 +10,29 @@
 // Ignore Terrain Types and Tile Types for now, but we want the image!
 // ----------------------------------------------------
 
+struct tileset_info
+{
+	uint firstgid = 1;
+	p2SString name = "Desert";
+	uint tilewidth = 32;
+	uint tileheight = 32;
+	uint spacing = 1;
+	uint margin = 1;
+};
 
 // TODO 1: Create a struct needed to hold the information to Map node
-
+	
+	struct map_info
+	{
+		float map_version = 1.0;
+		p2SString orientation = "orthogonal";
+		p2SString renderorder = "right-down";
+		uint width = 50;
+		uint height = 15;
+		uint tilewidth = 32;
+		uint tileheight = 32;
+		uint nextobjectid;
+	};
 
 // ----------------------------------------------------
 class j1Map : public j1Module
@@ -42,6 +62,8 @@ private:
 public:
 
 	// TODO 1: Add your struct for map info as public for now
+
+	map_info map_info;    
 
 private:
 
