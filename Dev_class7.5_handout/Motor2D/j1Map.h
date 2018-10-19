@@ -128,7 +128,7 @@ public:
 	void DrawBFS();
 	bool IsWalkable(int x, int y) const;
 	void ResetBFS();
-	void StopBFS();
+	void StopBFS(iPoint _goal);
 
 private:
 
@@ -153,6 +153,7 @@ private:
 	/// BFS
 	p2Queue<iPoint>		frontier;
 	p2List<iPoint>		visited;
+	iPoint goal = { 4,20 };
 };
 
 #endif // __j1MAP_H__

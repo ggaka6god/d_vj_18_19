@@ -35,8 +35,11 @@ void j1Map::ResetBFS()
 	visited.add(iPoint(19, 4));
 }
 
-void j1Map::StopBFS()
+void j1Map::StopBFS(iPoint _goal)
 {
+
+
+
 }
 
 void j1Map::PropagateBFS()
