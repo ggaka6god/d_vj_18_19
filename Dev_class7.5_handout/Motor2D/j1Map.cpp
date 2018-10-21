@@ -35,13 +35,6 @@ void j1Map::ResetBFS()
 	visited.add(iPoint(19, 4));
 }
 
-void j1Map::StopBFS(iPoint _goal)
-{
-
-
-
-}
-
 void j1Map::PropagateBFS()
 {
 	// TODO 1: If frontier queue contains elements
@@ -49,7 +42,7 @@ void j1Map::PropagateBFS()
 
 	if (frontier.Count() == 0)
 		return;
-	iPoint aux;
+	
 	frontier.Pop(aux);
 
 	// TODO 2: For each neighbor, if not visited, add it
@@ -69,30 +62,38 @@ void j1Map::PropagateBFS()
 	auxW.x = aux.x - 1;
 	auxW.y = aux.y;
 	
-
-	if (visited.find(auxN) == -1 && IsWalkable(auxN.x,auxN.y))
+	if (visited.end->data != goal)
 	{
-		frontier.Push(auxN);
-		visited.add(auxN);
-	}
 
-	if (visited.find(auxS) == -1 && IsWalkable(auxS.x, auxS.y))
-	{
-		frontier.Push(auxS);
-		visited.add(auxS);
-	}
 
-	if (visited.find(auxE) == -1 && IsWalkable(auxE.x, auxE.y))
-	{
-		frontier.Push(auxE);
-		visited.add(auxE);
-	}
+		if (visited.find(auxN) == -1 && IsWalkable(auxN.x, auxN.y))
+		{
+			frontier.Push(auxN);
+			visited.add(auxN);
+		}
 
-	if (visited.find(auxW) == -1 && IsWalkable(auxW.x, auxW.y))
-	{
-		frontier.Push(auxW);
-		visited.add(auxW);
+		if (visited.find(auxS) == -1 && IsWalkable(auxS.x, auxS.y))
+		{
+			frontier.Push(auxS);
+			visited.add(auxS);
+		}
+
+		if (visited.find(auxE) == -1 && IsWalkable(auxE.x, auxE.y))
+		{
+			frontier.Push(auxE);
+			visited.add(auxE);
+		}
+
+		if (visited.find(auxW) == -1 && IsWalkable(auxW.x, auxW.y))
+		{
+			frontier.Push(auxW);
+			visited.add(auxW);
+		}
 	}
+	
+	p2List_item<iPoint>* item = visited.start;
+
+
 
 }
 

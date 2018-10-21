@@ -1,12 +1,7 @@
-﻿  j1Map.cpp
-c:\users\arnaugg1\documents\github\d_vj_18_19\dev_class7.5_handout\motor2d\j1map.cpp(228): warning C4244: '=': conversion from 'float' to 'TYPE', possible loss of data
-          with
-          [
-              TYPE=int
-          ]
-c:\users\arnaugg1\documents\github\d_vj_18_19\dev_class7.5_handout\motor2d\j1map.cpp(229): warning C4244: '=': conversion from 'float' to 'TYPE', possible loss of data
-          with
-          [
-              TYPE=int
-          ]
-  Motor2D.vcxproj -> C:\Users\arnaugg1\Documents\GitHub\d_vj_18_19\Dev_class7.5_handout\Debug\Dev Class7.5 Handout.exe
+﻿  j1App.cpp
+  j1Map.cpp
+c:\users\arnau\documents\github\d_vj_18_19\dev_class7.5_handout\motor2d\j1map.cpp(229): warning C4244: '=': conversión de 'float' a 'int'; posible pérdida de datos
+c:\users\arnau\documents\github\d_vj_18_19\dev_class7.5_handout\motor2d\j1map.cpp(230): warning C4244: '=': conversión de 'float' a 'int'; posible pérdida de datos
+  j1Scene.cpp
+  Generando código...
+  Motor2D.vcxproj -> C:\Users\Arnau\Documents\GitHub\d_vj_18_19\Dev_class7.5_handout\Debug\Dev Class7.5 Handout.exe

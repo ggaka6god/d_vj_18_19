@@ -76,6 +76,7 @@ struct TileSet
 	int					num_tiles_height;
 	int					offset_x;
 	int					offset_y;
+	p2List<TileSet*>	prev_tile;
 };
 
 enum MapTypes
@@ -128,7 +129,6 @@ public:
 	void DrawBFS();
 	bool IsWalkable(int x, int y) const;
 	void ResetBFS();
-	void StopBFS(iPoint _goal);
 
 private:
 
@@ -153,7 +153,8 @@ private:
 	/// BFS
 	p2Queue<iPoint>		frontier;
 	p2List<iPoint>		visited;
-	iPoint goal = { 4,20 };
+	iPoint goal = { 4,24 };
+	iPoint aux;
 };
 
 #endif // __j1MAP_H__
