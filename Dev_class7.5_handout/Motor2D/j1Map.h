@@ -153,8 +153,10 @@ private:
 	/// BFS
 	p2Queue<iPoint>		frontier;
 	p2List<iPoint>		visited;
-	iPoint goal = { 4,24 };
+	iPoint goal = { 9,16 };
+	iPoint source = { 19,4 };
 	iPoint aux;
+	bool is_propagating;
 };
 
 #endif // __j1MAP_H__

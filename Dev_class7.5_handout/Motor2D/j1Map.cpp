@@ -31,8 +31,8 @@ void j1Map::ResetBFS()
 {
 	frontier.Clear();
 	visited.clear();
-	frontier.Push(iPoint(19, 4));
-	visited.add(iPoint(19, 4));
+	frontier.Push(source);
+	visited.add(source);
 }
 
 void j1Map::PropagateBFS()
@@ -61,35 +61,32 @@ void j1Map::PropagateBFS()
 	auxE.y = aux.y;
 	auxW.x = aux.x - 1;
 	auxW.y = aux.y;
-	
-	if (visited.end->data != goal)
-	{
 
 
-		if (visited.find(auxN) == -1 && IsWalkable(auxN.x, auxN.y))
+		if (visited.find(auxN) == -1 && IsWalkable(auxN.x, auxN.y) && visited.end->data != goal)
 		{
 			frontier.Push(auxN);
 			visited.add(auxN);
 		}
 
-		if (visited.find(auxS) == -1 && IsWalkable(auxS.x, auxS.y))
+		if (visited.find(auxS) == -1 && IsWalkable(auxS.x, auxS.y) && visited.end->data != goal)
 		{
 			frontier.Push(auxS);
 			visited.add(auxS);
 		}
 
-		if (visited.find(auxE) == -1 && IsWalkable(auxE.x, auxE.y))
+		if (visited.find(auxE) == -1 && IsWalkable(auxE.x, auxE.y) && visited.end->data != goal)
 		{
 			frontier.Push(auxE);
 			visited.add(auxE);
 		}
 
-		if (visited.find(auxW) == -1 && IsWalkable(auxW.x, auxW.y))
+		if (visited.find(auxW) == -1 && IsWalkable(auxW.x, auxW.y) && visited.end->data != goal)
 		{
 			frontier.Push(auxW);
 			visited.add(auxW);
 		}
-	}
+	
 	
 	p2List_item<iPoint>* item = visited.start;
 
@@ -129,6 +126,14 @@ void j1Map::DrawBFS()
 		App->render->Blit(tileset->texture, pos.x, pos.y, &r);
 	}
 
+	//Draw goal
+
+	TileSet* tileset = GetTilesetFromTileId(25);
+
+	SDL_Rect r = tileset->GetTileRect(25);
+	iPoint pos = MapToWorld(goal.x, goal.y);
+
+	App->render->Blit(tileset->texture, pos.x, pos.y, &r);
 }
 
 bool j1Map::IsWalkable(int x, int y) const
