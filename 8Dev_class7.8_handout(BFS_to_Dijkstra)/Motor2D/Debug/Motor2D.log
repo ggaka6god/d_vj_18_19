@@ -1,12 +1,15 @@
-﻿  j1Map.cpp
-c:\users\arnaugg1\documents\github\d_vj_18_19\dev_class7.8_handout\motor2d\j1map.cpp(265): warning C4244: '=': conversion from 'float' to 'TYPE', possible loss of data
+﻿  j1App.cpp
+  j1Map.cpp
+c:\users\arnaugg1\documents\github\d_vj_18_19\8dev_class7.8_handout(bfs_to_dijkstra)\motor2d\j1map.cpp(293): warning C4244: '=': conversion from 'float' to 'TYPE', possible loss of data
           with
           [
               TYPE=int
           ]
-c:\users\arnaugg1\documents\github\d_vj_18_19\dev_class7.8_handout\motor2d\j1map.cpp(266): warning C4244: '=': conversion from 'float' to 'TYPE', possible loss of data
+c:\users\arnaugg1\documents\github\d_vj_18_19\8dev_class7.8_handout(bfs_to_dijkstra)\motor2d\j1map.cpp(294): warning C4244: '=': conversion from 'float' to 'TYPE', possible loss of data
           with
           [
               TYPE=int
           ]
-  Motor2D.vcxproj -> C:\Users\arnaugg1\Documents\GitHub\d_vj_18_19\Dev_class7.8_handout\Debug\Dev Class7.8 Handout.exe
+  j1Scene.cpp
+  Generating Code...
+  Motor2D.vcxproj -> C:\Users\arnaugg1\Documents\GitHub\d_vj_18_19\8Dev_class7.8_handout(BFS_to_Dijkstra)\Debug\Dev Class7.8 Handout.exe

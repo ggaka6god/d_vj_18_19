@@ -77,6 +77,12 @@ bool j1Scene::Update(float dt)
 	if (App->input->GetKey(SDL_SCANCODE_K) == KEY_REPEAT)
 		App->map->PropagateDijkstra();
 
+	if (App->input->GetKey(SDL_SCANCODE_O) == KEY_DOWN)
+		App->map->PropagateAStar();
+
+	if (App->input->GetKey(SDL_SCANCODE_P) == KEY_REPEAT)
+		App->map->PropagateAStar();
+
 	if (App->input->GetMouseButtonDown(1) == KEY_DOWN)
 	{
 		iPoint p;
