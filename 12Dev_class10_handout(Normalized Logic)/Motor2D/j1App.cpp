@@ -87,6 +87,7 @@ bool j1App::Awake()
 		organization.create(app_config.child("organization").child_value());
 
 		// TODO 1: Read from config file your framerate cap
+		framerate_cap = config.child("app").attribute("framerate_cap").as_uint;
 	}
 
 	if(ret == true)
@@ -171,6 +172,7 @@ void j1App::PrepareUpdate()
 
 	// TODO 4: Calculate the dt: differential time since last frame
 	frame_time.Start();
+
 }
 
 // ---------------------------------------------
@@ -202,7 +204,7 @@ void j1App::FinishUpdate()
 	App->win->SetTitle(title);
 
 	// TODO 2: Use SDL_Delay to make sure you get your capped framerate
-
+	SDL_Delay(framerate_cap);
 	// TODO3: Measure accurately the amount of time it SDL_Delay actually waits compared to what was expected
 }
 
