@@ -52,7 +52,7 @@ public:
 	// TODO 2: Create the factory methods
 	// Gui creation functions
 
-	GUI_elem* CreateGuiElem(SDL_Texture* _texture, SDL_Rect _source_elem_rect, GUI_TYPE _type, iPoint _pos_on_screen, const char* _text);
+	GUI_elem* CreateGuiElem(GUI_TYPE _type, SDL_Rect _source_elem_rect, iPoint _pos_on_screen, SDL_Texture * _texture, const char * _text);
 
 	p2List<GUI_elem*> GUI_elem_list;
 

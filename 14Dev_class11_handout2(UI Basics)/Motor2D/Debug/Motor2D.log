@@ -1,13 +1,34 @@
-﻿  j1Gui.cpp
+﻿  j1Fonts.cpp
+  j1Gui.cpp
+  j1Main.cpp
   j1App.cpp
-c:\users\arnaugg1\desktop\dev_class11_handout2\motor2d\j1app.cpp(217): warning C4018: '<': signed/unsigned mismatch
-c:\users\arnaugg1\desktop\dev_class11_handout2\motor2d\j1app.cpp(213): warning C4477: 'sprintf_s' : format string '%lu' requires an argument of type 'unsigned long', but variadic argument 6 has type 'uint64'
-  c:\users\arnaugg1\desktop\dev_class11_handout2\motor2d\j1app.cpp(213): note: consider using '%llu' in the format string
-  c:\users\arnaugg1\desktop\dev_class11_handout2\motor2d\j1app.cpp(213): note: consider using '%I64u' in the format string
+c:\users\arnaugg1\documents\github\d_vj_18_19\14dev_class11_handout2(ui basics)\motor2d\j1app.cpp(217): warning C4018: '<': signed/unsigned mismatch
+c:\users\arnaugg1\documents\github\d_vj_18_19\14dev_class11_handout2(ui basics)\motor2d\j1app.cpp(213): warning C4477: 'sprintf_s' : format string '%lu' requires an argument of type 'unsigned long', but variadic argument 6 has type 'uint64'
+  c:\users\arnaugg1\documents\github\d_vj_18_19\14dev_class11_handout2(ui basics)\motor2d\j1app.cpp(213): note: consider using '%llu' in the format string
+  c:\users\arnaugg1\documents\github\d_vj_18_19\14dev_class11_handout2(ui basics)\motor2d\j1app.cpp(213): note: consider using '%I64u' in the format string
+  j1Audio.cpp
+  j1Input.cpp
+  j1Map.cpp
+c:\users\arnaugg1\documents\github\d_vj_18_19\14dev_class11_handout2(ui basics)\motor2d\j1map.cpp(106): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+c:\users\arnaugg1\documents\github\d_vj_18_19\14dev_class11_handout2(ui basics)\motor2d\j1map.cpp(107): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+  j1Pathfinding.cpp
+c:\users\arnaugg1\documents\github\d_vj_18_19\14dev_class11_handout2(ui basics)\motor2d\p2point.h(114): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  c:\users\arnaugg1\documents\github\d_vj_18_19\14dev_class11_handout2(ui basics)\motor2d\p2point.h(110): note: while compiling class template member function 'int p2Point<int>::DistanceTo(const p2Point<int> &) const'
+  c:\users\arnaugg1\documents\github\d_vj_18_19\14dev_class11_handout2(ui basics)\motor2d\j1pathfinding.cpp(160): note: see reference to function template instantiation 'int p2Point<int>::DistanceTo(const p2Point<int> &) const' being compiled
+  c:\users\arnaugg1\documents\github\d_vj_18_19\14dev_class11_handout2(ui basics)\motor2d\j1pathfinding.h(81): note: see reference to class template instantiation 'p2Point<int>' being compiled
+c:\users\arnaugg1\documents\github\d_vj_18_19\14dev_class11_handout2(ui basics)\motor2d\p2point.h(114): warning C4244: 'return': conversion from 'float' to 'int', possible loss of data
+  j1PerfTimer.cpp
   j1Scene.cpp
-c:\users\arnaugg1\desktop\dev_class11_handout2\motor2d\j1scene.cpp(95): warning C4244: '+=': conversion from 'float' to 'int', possible loss of data
-c:\users\arnaugg1\desktop\dev_class11_handout2\motor2d\j1scene.cpp(98): warning C4244: '-=': conversion from 'float' to 'int', possible loss of data
-c:\users\arnaugg1\desktop\dev_class11_handout2\motor2d\j1scene.cpp(101): warning C4244: '+=': conversion from 'float' to 'int', possible loss of data
-c:\users\arnaugg1\desktop\dev_class11_handout2\motor2d\j1scene.cpp(104): warning C4244: '-=': conversion from 'float' to 'int', possible loss of data
+c:\users\arnaugg1\documents\github\d_vj_18_19\14dev_class11_handout2(ui basics)\motor2d\j1scene.cpp(95): warning C4244: '+=': conversion from 'float' to 'int', possible loss of data
+c:\users\arnaugg1\documents\github\d_vj_18_19\14dev_class11_handout2(ui basics)\motor2d\j1scene.cpp(98): warning C4244: '-=': conversion from 'float' to 'int', possible loss of data
+c:\users\arnaugg1\documents\github\d_vj_18_19\14dev_class11_handout2(ui basics)\motor2d\j1scene.cpp(101): warning C4244: '+=': conversion from 'float' to 'int', possible loss of data
+c:\users\arnaugg1\documents\github\d_vj_18_19\14dev_class11_handout2(ui basics)\motor2d\j1scene.cpp(104): warning C4244: '-=': conversion from 'float' to 'int', possible loss of data
+  j1Timer.cpp
+  p2Log.cpp
+  j1Render.cpp
+  j1Textures.cpp
+  j1Window.cpp
+  pugixml.cpp
   Generating Code...
-  Motor2D.vcxproj -> C:\Users\arnaugg1\Desktop\Dev_class11_handout2\Debug\Development - Class 11 Handout2.exe
+  LINK : C:\Users\arnaugg1\Documents\GitHub\d_vj_18_19\14Dev_class11_handout2(UI Basics)\Debug\Development - Class 11 Handout2.exe not found or not built by the last incremental link; performing full link
+  Motor2D.vcxproj -> C:\Users\arnaugg1\Documents\GitHub\d_vj_18_19\14Dev_class11_handout2(UI Basics)\Debug\Development - Class 11 Handout2.exe

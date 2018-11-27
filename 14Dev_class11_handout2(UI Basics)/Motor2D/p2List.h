@@ -58,6 +58,16 @@ public:
 		clear();
 	}
 
+	p2List_item<tdata>* getFirst() const
+	{
+		return start;
+	}
+
+	p2List_item<tdata>* getLast() const
+	{
+		return end;
+	}
+
 	/**
 	* Get Size
 	*/
