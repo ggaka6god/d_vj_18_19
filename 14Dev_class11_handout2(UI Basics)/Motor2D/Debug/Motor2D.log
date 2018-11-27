@@ -1,0 +1,13 @@
+﻿  j1Gui.cpp
+  j1App.cpp
+c:\users\arnaugg1\desktop\dev_class11_handout2\motor2d\j1app.cpp(217): warning C4018: '<': signed/unsigned mismatch
+c:\users\arnaugg1\desktop\dev_class11_handout2\motor2d\j1app.cpp(213): warning C4477: 'sprintf_s' : format string '%lu' requires an argument of type 'unsigned long', but variadic argument 6 has type 'uint64'
+  c:\users\arnaugg1\desktop\dev_class11_handout2\motor2d\j1app.cpp(213): note: consider using '%llu' in the format string
+  c:\users\arnaugg1\desktop\dev_class11_handout2\motor2d\j1app.cpp(213): note: consider using '%I64u' in the format string
+  j1Scene.cpp
+c:\users\arnaugg1\desktop\dev_class11_handout2\motor2d\j1scene.cpp(95): warning C4244: '+=': conversion from 'float' to 'int', possible loss of data
+c:\users\arnaugg1\desktop\dev_class11_handout2\motor2d\j1scene.cpp(98): warning C4244: '-=': conversion from 'float' to 'int', possible loss of data
+c:\users\arnaugg1\desktop\dev_class11_handout2\motor2d\j1scene.cpp(101): warning C4244: '+=': conversion from 'float' to 'int', possible loss of data
+c:\users\arnaugg1\desktop\dev_class11_handout2\motor2d\j1scene.cpp(104): warning C4244: '-=': conversion from 'float' to 'int', possible loss of data
+  Generating Code...
+  Motor2D.vcxproj -> C:\Users\arnaugg1\Desktop\Dev_class11_handout2\Debug\Development - Class 11 Handout2.exe
