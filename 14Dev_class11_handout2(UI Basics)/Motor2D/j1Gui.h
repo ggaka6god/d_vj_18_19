@@ -49,19 +49,27 @@ public:
 	// Called before quitting
 	bool CleanUp();
 
+	void ManageFocus();
+
 	// TODO 2: Create the factory methods
 	// Gui creation functions
 
-	GUI_elem* CreateGuiElem(GUI_TYPE _type, SDL_Rect _source_elem_rect, iPoint _pos_on_screen, SDL_Texture * _texture, const char * _text);
-
-	p2List<GUI_elem*> GUI_elem_list;
+	GUI_elem* AddUIElement(GUI_TYPE _type, SDL_Rect _source_elem_rect, iPoint _pos_on_screen, SDL_Texture * _texture, const char * _text);
 
 	const SDL_Texture* GetAtlas() const;
+
+public:
+	bool debug_draw = false;
 
 private:
 
 	SDL_Texture* atlas;
 	p2SString atlas_file_name;
+
+	p2List<GUI_elem*> elements;
+	GUI_elem* curr_element;
+
+	uint curr_tab = 0;
 };
 
 #endif // __j1GUI_H__

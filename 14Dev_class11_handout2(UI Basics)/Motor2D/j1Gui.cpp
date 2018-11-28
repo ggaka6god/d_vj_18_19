@@ -52,22 +52,26 @@ bool j1Gui::CleanUp()
 {
 	LOG("Freeing GUI");
 
-	if (GUI_elem_list.count() > 0)
+	if (elements.count() > 0)
 	{
-		p2List_item<GUI_elem*>* g_item = GUI_elem_list.getFirst();
+		p2List_item<GUI_elem*>* g_item = elements.getFirst();
 		while (g_item)
 		{
 			delete g_item->data;
 			g_item = g_item->next;
 		}
-		GUI_elem_list.clear();
+		elements.clear();
 		LOG("GUI CLEAN UP OK!");
 	}
 	LOG("ERROR CLEANING UP GUI");
 		return false;
 }
 
-GUI_elem* j1Gui::CreateGuiElem(GUI_TYPE _type, SDL_Rect _source_elem_rect, iPoint _pos_on_screen, SDL_Texture * _texture, const char * _text)
+void j1Gui::ManageFocus()
+{
+}
+
+GUI_elem* j1Gui::AddUIElement(GUI_TYPE _type, SDL_Rect _source_elem_rect, iPoint _pos_on_screen, SDL_Texture * _texture, const char * _text)
 {
 	
 	GUI_elem* ret = new GUI_elem;
@@ -101,7 +105,7 @@ GUI_elem* j1Gui::CreateGuiElem(GUI_TYPE _type, SDL_Rect _source_elem_rect, iPoin
 			break;
 	}
 
-	GUI_elem_list.add(ret);
+	elements.add(ret);
 	return ret;
 }
 
