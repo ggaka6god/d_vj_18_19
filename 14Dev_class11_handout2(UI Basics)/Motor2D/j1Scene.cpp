@@ -10,6 +10,8 @@
 #include "j1PathFinding.h"
 #include "j1Gui.h"
 #include "j1Scene.h"
+#include "j1Fonts.h"
+#include "j1UIElement.h"
 
 j1Scene::j1Scene() : j1Module()
 {
@@ -45,6 +47,9 @@ bool j1Scene::Start()
 	debug_tex = App->tex->Load("maps/path2.png");
 
 	// TODO 3: Create the banner (rect {485, 829, 328, 103}) and the text "Hello World"
+
+	SDL_RenderSetViewport(App->render->renderer, &App->render->viewport);
+	App->gui->AddUIElement(NON_INTERACTIVE, iPoint(App->render->viewport.w / 2, App->render->viewport.h / 12 + 25));
 
 	return true;
 }
@@ -84,6 +89,10 @@ bool j1Scene::Update(float dt)
 {
 	// Gui ---
 	
+	SDL_Texture* baby = App->font->Print("HELLO WORLD", { 255, 0, 0, 255 });
+
+	App->render->Blit(baby, 12, 16);
+
 	// -------
 	if(App->input->GetKey(SDL_SCANCODE_L) == KEY_DOWN)
 		App->LoadGame("save_game.xml");

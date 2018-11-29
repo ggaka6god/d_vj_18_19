@@ -17,11 +17,9 @@ enum GUI_TYPE
 
 struct GUI_elem
 {
-	SDL_Texture* texture;
 	SDL_Rect source_elem_rect;
 	GUI_TYPE type;
 	iPoint pos_on_screen;
-	const char* text = nullptr;
 };
 
 // ---------------------------------------------------
@@ -54,7 +52,7 @@ public:
 	// TODO 2: Create the factory methods
 	// Gui creation functions
 
-	GUI_elem* AddUIElement(GUI_TYPE _type, SDL_Rect _source_elem_rect, iPoint _pos_on_screen, SDL_Texture * _texture, const char * _text);
+	GUI_elem* AddUIElement(GUI_TYPE _type, iPoint _pos_on_screen);
 
 	const SDL_Texture* GetAtlas() const;
 

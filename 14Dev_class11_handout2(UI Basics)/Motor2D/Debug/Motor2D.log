@@ -1,16 +1,109 @@
-﻿  UIElement.cpp
-c:\users\arnaugg1\documents\github\d_vj_18_19\14dev_class11_handout2(ui basics)\motor2d\uielement.cpp(64): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-c:\users\arnaugg1\documents\github\d_vj_18_19\14dev_class11_handout2(ui basics)\motor2d\uielement.cpp(65): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-c:\users\arnaugg1\documents\github\d_vj_18_19\14dev_class11_handout2(ui basics)\motor2d\p2point.h(54): error C2065: 'p2Vector2': undeclared identifier
-  c:\users\arnaugg1\documents\github\d_vj_18_19\14dev_class11_handout2(ui basics)\motor2d\p2point.h(53): note: while compiling class template member function 'p2Point<int> p2Point<int>::operator +(const p2Point<int> &) const'
-  c:\users\arnaugg1\documents\github\d_vj_18_19\14dev_class11_handout2(ui basics)\motor2d\uielement.cpp(40): note: see reference to function template instantiation 'p2Point<int> p2Point<int>::operator +(const p2Point<int> &) const' being compiled
-  c:\users\arnaugg1\documents\github\d_vj_18_19\14dev_class11_handout2(ui basics)\motor2d\uielement.h(71): note: see reference to class template instantiation 'p2Point<int>' being compiled
-c:\users\arnaugg1\documents\github\d_vj_18_19\14dev_class11_handout2(ui basics)\motor2d\p2point.h(54): error C2146: syntax error: missing ';' before identifier 'r'
-c:\users\arnaugg1\documents\github\d_vj_18_19\14dev_class11_handout2(ui basics)\motor2d\p2point.h(54): error C2065: 'r': undeclared identifier
-c:\users\arnaugg1\documents\github\d_vj_18_19\14dev_class11_handout2(ui basics)\motor2d\p2point.h(56): error C2065: 'r': undeclared identifier
-c:\users\arnaugg1\documents\github\d_vj_18_19\14dev_class11_handout2(ui basics)\motor2d\p2point.h(56): error C2228: left of '.x' must have class/struct/union
-  c:\users\arnaugg1\documents\github\d_vj_18_19\14dev_class11_handout2(ui basics)\motor2d\p2point.h(56): note: type is 'unknown-type'
-c:\users\arnaugg1\documents\github\d_vj_18_19\14dev_class11_handout2(ui basics)\motor2d\p2point.h(57): error C2065: 'r': undeclared identifier
-c:\users\arnaugg1\documents\github\d_vj_18_19\14dev_class11_handout2(ui basics)\motor2d\p2point.h(57): error C2228: left of '.y' must have class/struct/union
-  c:\users\arnaugg1\documents\github\d_vj_18_19\14dev_class11_handout2(ui basics)\motor2d\p2point.h(57): note: type is 'unknown-type'
-c:\users\arnaugg1\documents\github\d_vj_18_19\14dev_class11_handout2(ui basics)\motor2d\p2point.h(59): error C2065: 'r': undeclared identifier
+﻿  j1App.cpp
+c:\users\arnaugg1\documents\github\d_vj_18_19\14dev_class11_handout2(ui basics)\motor2d\j1app.cpp(35): error C2512: 'j1UIElement::j1UIElement': no appropriate default constructor available
+c:\users\arnaugg1\documents\github\d_vj_18_19\14dev_class11_handout2(ui basics)\motor2d\j1app.cpp(220): warning C4018: '<': signed/unsigned mismatch
+c:\users\arnaugg1\documents\github\d_vj_18_19\14dev_class11_handout2(ui basics)\motor2d\j1app.cpp(216): warning C4477: 'sprintf_s' : format string '%lu' requires an argument of type 'unsigned long', but variadic argument 6 has type 'uint64'
+  c:\users\arnaugg1\documents\github\d_vj_18_19\14dev_class11_handout2(ui basics)\motor2d\j1app.cpp(216): note: consider using '%llu' in the format string
+  c:\users\arnaugg1\documents\github\d_vj_18_19\14dev_class11_handout2(ui basics)\motor2d\j1app.cpp(216): note: consider using '%I64u' in the format string
+  j1UIElement.cpp
+c:\users\arnaugg1\documents\github\d_vj_18_19\14dev_class11_handout2(ui basics)\motor2d\j1uielement.cpp(6): error C2653: 'UIElement': is not a class or namespace name
+c:\users\arnaugg1\documents\github\d_vj_18_19\14dev_class11_handout2(ui basics)\motor2d\j1uielement.cpp(8): error C3861: 'SetDrawPosition': identifier not found
+c:\users\arnaugg1\documents\github\d_vj_18_19\14dev_class11_handout2(ui basics)\motor2d\j1uielement.cpp(9): error C2065: 'section': undeclared identifier
+c:\users\arnaugg1\documents\github\d_vj_18_19\14dev_class11_handout2(ui basics)\motor2d\j1uielement.cpp(10): error C2065: 'texture': undeclared identifier
+c:\users\arnaugg1\documents\github\d_vj_18_19\14dev_class11_handout2(ui basics)\motor2d\j1uielement.cpp(10): error C2065: 'draw_positon': undeclared identifier
+c:\users\arnaugg1\documents\github\d_vj_18_19\14dev_class11_handout2(ui basics)\motor2d\j1uielement.cpp(10): error C2228: left of '.x' must have class/struct/union
+  c:\users\arnaugg1\documents\github\d_vj_18_19\14dev_class11_handout2(ui basics)\motor2d\j1uielement.cpp(10): note: type is 'unknown-type'
+c:\users\arnaugg1\documents\github\d_vj_18_19\14dev_class11_handout2(ui basics)\motor2d\j1uielement.cpp(10): error C2228: left of '.y' must have class/struct/union
+  c:\users\arnaugg1\documents\github\d_vj_18_19\14dev_class11_handout2(ui basics)\motor2d\j1uielement.cpp(10): note: type is 'unknown-type'
+c:\users\arnaugg1\documents\github\d_vj_18_19\14dev_class11_handout2(ui basics)\motor2d\j1uielement.cpp(13): error C2065: 'texture': undeclared identifier
+c:\users\arnaugg1\documents\github\d_vj_18_19\14dev_class11_handout2(ui basics)\motor2d\j1uielement.cpp(13): error C2065: 'draw_positon': undeclared identifier
+c:\users\arnaugg1\documents\github\d_vj_18_19\14dev_class11_handout2(ui basics)\motor2d\j1uielement.cpp(13): error C2228: left of '.x' must have class/struct/union
+  c:\users\arnaugg1\documents\github\d_vj_18_19\14dev_class11_handout2(ui basics)\motor2d\j1uielement.cpp(13): note: type is 'unknown-type'
+c:\users\arnaugg1\documents\github\d_vj_18_19\14dev_class11_handout2(ui basics)\motor2d\j1uielement.cpp(13): error C2228: left of '.y' must have class/struct/union
+  c:\users\arnaugg1\documents\github\d_vj_18_19\14dev_class11_handout2(ui basics)\motor2d\j1uielement.cpp(13): note: type is 'unknown-type'
+c:\users\arnaugg1\documents\github\d_vj_18_19\14dev_class11_handout2(ui basics)\motor2d\j1uielement.cpp(13): error C2065: 'section': undeclared identifier
+c:\users\arnaugg1\documents\github\d_vj_18_19\14dev_class11_handout2(ui basics)\motor2d\j1uielement.cpp(17): error C2653: 'UIElement': is not a class or namespace name
+c:\users\arnaugg1\documents\github\d_vj_18_19\14dev_class11_handout2(ui basics)\motor2d\j1uielement.cpp(19): error C2065: 'parent': undeclared identifier
+c:\users\arnaugg1\documents\github\d_vj_18_19\14dev_class11_handout2(ui basics)\motor2d\j1uielement.cpp(21): error C2065: 'move_with_camera': undeclared identifier
+c:\users\arnaugg1\documents\github\d_vj_18_19\14dev_class11_handout2(ui basics)\motor2d\j1uielement.cpp(23): error C2065: 'draw_positon': undeclared identifier
+c:\users\arnaugg1\documents\github\d_vj_18_19\14dev_class11_handout2(ui basics)\motor2d\j1uielement.cpp(23): error C2228: left of '.x' must have class/struct/union
+  c:\users\arnaugg1\documents\github\d_vj_18_19\14dev_class11_handout2(ui basics)\motor2d\j1uielement.cpp(23): note: type is 'unknown-type'
+c:\users\arnaugg1\documents\github\d_vj_18_19\14dev_class11_handout2(ui basics)\motor2d\j1uielement.cpp(23): error C2065: 'position': undeclared identifier
+c:\users\arnaugg1\documents\github\d_vj_18_19\14dev_class11_handout2(ui basics)\motor2d\j1uielement.cpp(24): error C2065: 'draw_positon': undeclared identifier
+c:\users\arnaugg1\documents\github\d_vj_18_19\14dev_class11_handout2(ui basics)\motor2d\j1uielement.cpp(24): error C2228: left of '.y' must have class/struct/union
+  c:\users\arnaugg1\documents\github\d_vj_18_19\14dev_class11_handout2(ui basics)\motor2d\j1uielement.cpp(24): note: type is 'unknown-type'
+c:\users\arnaugg1\documents\github\d_vj_18_19\14dev_class11_handout2(ui basics)\motor2d\j1uielement.cpp(24): error C2065: 'position': undeclared identifier
+c:\users\arnaugg1\documents\github\d_vj_18_19\14dev_class11_handout2(ui basics)\motor2d\j1uielement.cpp(28): error C2065: 'draw_positon': undeclared identifier
+c:\users\arnaugg1\documents\github\d_vj_18_19\14dev_class11_handout2(ui basics)\motor2d\j1uielement.cpp(28): error C2065: 'position': undeclared identifier
+c:\users\arnaugg1\documents\github\d_vj_18_19\14dev_class11_handout2(ui basics)\motor2d\j1uielement.cpp(33): error C2065: 'move_with_camera': undeclared identifier
+c:\users\arnaugg1\documents\github\d_vj_18_19\14dev_class11_handout2(ui basics)\motor2d\j1uielement.cpp(35): error C2065: 'draw_positon': undeclared identifier
+c:\users\arnaugg1\documents\github\d_vj_18_19\14dev_class11_handout2(ui basics)\motor2d\j1uielement.cpp(35): error C2228: left of '.x' must have class/struct/union
+  c:\users\arnaugg1\documents\github\d_vj_18_19\14dev_class11_handout2(ui basics)\motor2d\j1uielement.cpp(35): note: type is 'unknown-type'
+c:\users\arnaugg1\documents\github\d_vj_18_19\14dev_class11_handout2(ui basics)\motor2d\j1uielement.cpp(35): error C2065: 'position': undeclared identifier
+c:\users\arnaugg1\documents\github\d_vj_18_19\14dev_class11_handout2(ui basics)\motor2d\j1uielement.cpp(35): error C2065: 'parent': undeclared identifier
+c:\users\arnaugg1\documents\github\d_vj_18_19\14dev_class11_handout2(ui basics)\motor2d\j1uielement.cpp(35): error C2227: left of '->position' must point to class/struct/union/generic type
+  c:\users\arnaugg1\documents\github\d_vj_18_19\14dev_class11_handout2(ui basics)\motor2d\j1uielement.cpp(35): note: type is 'unknown-type'
+c:\users\arnaugg1\documents\github\d_vj_18_19\14dev_class11_handout2(ui basics)\motor2d\j1uielement.cpp(36): error C2065: 'draw_positon': undeclared identifier
+c:\users\arnaugg1\documents\github\d_vj_18_19\14dev_class11_handout2(ui basics)\motor2d\j1uielement.cpp(36): error C2228: left of '.y' must have class/struct/union
+  c:\users\arnaugg1\documents\github\d_vj_18_19\14dev_class11_handout2(ui basics)\motor2d\j1uielement.cpp(36): note: type is 'unknown-type'
+c:\users\arnaugg1\documents\github\d_vj_18_19\14dev_class11_handout2(ui basics)\motor2d\j1uielement.cpp(36): error C2065: 'position': undeclared identifier
+c:\users\arnaugg1\documents\github\d_vj_18_19\14dev_class11_handout2(ui basics)\motor2d\j1uielement.cpp(36): error C2065: 'parent': undeclared identifier
+c:\users\arnaugg1\documents\github\d_vj_18_19\14dev_class11_handout2(ui basics)\motor2d\j1uielement.cpp(36): error C2227: left of '->position' must point to class/struct/union/generic type
+  c:\users\arnaugg1\documents\github\d_vj_18_19\14dev_class11_handout2(ui basics)\motor2d\j1uielement.cpp(36): note: type is 'unknown-type'
+c:\users\arnaugg1\documents\github\d_vj_18_19\14dev_class11_handout2(ui basics)\motor2d\j1uielement.cpp(40): error C2065: 'draw_positon': undeclared identifier
+c:\users\arnaugg1\documents\github\d_vj_18_19\14dev_class11_handout2(ui basics)\motor2d\j1uielement.cpp(40): error C2065: 'position': undeclared identifier
+c:\users\arnaugg1\documents\github\d_vj_18_19\14dev_class11_handout2(ui basics)\motor2d\j1uielement.cpp(40): error C2065: 'parent': undeclared identifier
+c:\users\arnaugg1\documents\github\d_vj_18_19\14dev_class11_handout2(ui basics)\motor2d\j1uielement.cpp(40): error C2227: left of '->position' must point to class/struct/union/generic type
+  c:\users\arnaugg1\documents\github\d_vj_18_19\14dev_class11_handout2(ui basics)\motor2d\j1uielement.cpp(40): note: type is 'unknown-type'
+c:\users\arnaugg1\documents\github\d_vj_18_19\14dev_class11_handout2(ui basics)\motor2d\j1uielement.cpp(45): error C2653: 'UIElement': is not a class or namespace name
+c:\users\arnaugg1\documents\github\d_vj_18_19\14dev_class11_handout2(ui basics)\motor2d\j1uielement.cpp(47): error C2065: 'section': undeclared identifier
+c:\users\arnaugg1\documents\github\d_vj_18_19\14dev_class11_handout2(ui basics)\motor2d\j1uielement.cpp(48): error C2065: 'draw_positon': undeclared identifier
+c:\users\arnaugg1\documents\github\d_vj_18_19\14dev_class11_handout2(ui basics)\motor2d\j1uielement.cpp(48): error C2228: left of '.x' must have class/struct/union
+  c:\users\arnaugg1\documents\github\d_vj_18_19\14dev_class11_handout2(ui basics)\motor2d\j1uielement.cpp(48): note: type is 'unknown-type'
+c:\users\arnaugg1\documents\github\d_vj_18_19\14dev_class11_handout2(ui basics)\motor2d\j1uielement.cpp(48): error C2228: left of '.y' must have class/struct/union
+  c:\users\arnaugg1\documents\github\d_vj_18_19\14dev_class11_handout2(ui basics)\motor2d\j1uielement.cpp(48): note: type is 'unknown-type'
+c:\users\arnaugg1\documents\github\d_vj_18_19\14dev_class11_handout2(ui basics)\motor2d\j1uielement.cpp(48): error C2065: 'section': undeclared identifier
+c:\users\arnaugg1\documents\github\d_vj_18_19\14dev_class11_handout2(ui basics)\motor2d\j1uielement.cpp(48): error C2228: left of '.w' must have class/struct/union
+  c:\users\arnaugg1\documents\github\d_vj_18_19\14dev_class11_handout2(ui basics)\motor2d\j1uielement.cpp(48): note: type is 'unknown-type'
+c:\users\arnaugg1\documents\github\d_vj_18_19\14dev_class11_handout2(ui basics)\motor2d\j1uielement.cpp(48): error C2228: left of '.h' must have class/struct/union
+  c:\users\arnaugg1\documents\github\d_vj_18_19\14dev_class11_handout2(ui basics)\motor2d\j1uielement.cpp(48): note: type is 'unknown-type'
+c:\users\arnaugg1\documents\github\d_vj_18_19\14dev_class11_handout2(ui basics)\motor2d\j1uielement.cpp(52): error C2065: 'texture': undeclared identifier
+c:\users\arnaugg1\documents\github\d_vj_18_19\14dev_class11_handout2(ui basics)\motor2d\j1uielement.cpp(53): error C2065: 'draw_positon': undeclared identifier
+c:\users\arnaugg1\documents\github\d_vj_18_19\14dev_class11_handout2(ui basics)\motor2d\j1uielement.cpp(53): error C2228: left of '.x' must have class/struct/union
+  c:\users\arnaugg1\documents\github\d_vj_18_19\14dev_class11_handout2(ui basics)\motor2d\j1uielement.cpp(53): note: type is 'unknown-type'
+c:\users\arnaugg1\documents\github\d_vj_18_19\14dev_class11_handout2(ui basics)\motor2d\j1uielement.cpp(53): error C2228: left of '.y' must have class/struct/union
+  c:\users\arnaugg1\documents\github\d_vj_18_19\14dev_class11_handout2(ui basics)\motor2d\j1uielement.cpp(53): note: type is 'unknown-type'
+c:\users\arnaugg1\documents\github\d_vj_18_19\14dev_class11_handout2(ui basics)\motor2d\j1uielement.cpp(57): error C2653: 'UIElement': is not a class or namespace name
+c:\users\arnaugg1\documents\github\d_vj_18_19\14dev_class11_handout2(ui basics)\motor2d\j1uielement.cpp(64): error C2065: 'position': undeclared identifier
+c:\users\arnaugg1\documents\github\d_vj_18_19\14dev_class11_handout2(ui basics)\motor2d\j1uielement.cpp(64): error C2228: left of '.x' must have class/struct/union
+  c:\users\arnaugg1\documents\github\d_vj_18_19\14dev_class11_handout2(ui basics)\motor2d\j1uielement.cpp(64): note: type is 'unknown-type'
+c:\users\arnaugg1\documents\github\d_vj_18_19\14dev_class11_handout2(ui basics)\motor2d\j1uielement.cpp(65): error C2065: 'position': undeclared identifier
+c:\users\arnaugg1\documents\github\d_vj_18_19\14dev_class11_handout2(ui basics)\motor2d\j1uielement.cpp(65): error C2228: left of '.y' must have class/struct/union
+  c:\users\arnaugg1\documents\github\d_vj_18_19\14dev_class11_handout2(ui basics)\motor2d\j1uielement.cpp(65): note: type is 'unknown-type'
+c:\users\arnaugg1\documents\github\d_vj_18_19\14dev_class11_handout2(ui basics)\motor2d\j1uielement.cpp(68): error C2653: 'UIElement': is not a class or namespace name
+c:\users\arnaugg1\documents\github\d_vj_18_19\14dev_class11_handout2(ui basics)\motor2d\j1uielement.cpp(70): error C2065: 'section': undeclared identifier
+c:\users\arnaugg1\documents\github\d_vj_18_19\14dev_class11_handout2(ui basics)\motor2d\j1uielement.cpp(71): error C2065: 'position': undeclared identifier
+c:\users\arnaugg1\documents\github\d_vj_18_19\14dev_class11_handout2(ui basics)\motor2d\j1uielement.cpp(71): error C2228: left of '.x' must have class/struct/union
+  c:\users\arnaugg1\documents\github\d_vj_18_19\14dev_class11_handout2(ui basics)\motor2d\j1uielement.cpp(71): note: type is 'unknown-type'
+c:\users\arnaugg1\documents\github\d_vj_18_19\14dev_class11_handout2(ui basics)\motor2d\j1uielement.cpp(71): error C2065: 'section': undeclared identifier
+c:\users\arnaugg1\documents\github\d_vj_18_19\14dev_class11_handout2(ui basics)\motor2d\j1uielement.cpp(71): error C2228: left of '.w' must have class/struct/union
+  c:\users\arnaugg1\documents\github\d_vj_18_19\14dev_class11_handout2(ui basics)\motor2d\j1uielement.cpp(71): note: type is 'unknown-type'
+c:\users\arnaugg1\documents\github\d_vj_18_19\14dev_class11_handout2(ui basics)\motor2d\j1uielement.cpp(72): error C2065: 'position': undeclared identifier
+c:\users\arnaugg1\documents\github\d_vj_18_19\14dev_class11_handout2(ui basics)\motor2d\j1uielement.cpp(72): error C2228: left of '.y' must have class/struct/union
+  c:\users\arnaugg1\documents\github\d_vj_18_19\14dev_class11_handout2(ui basics)\motor2d\j1uielement.cpp(72): note: type is 'unknown-type'
+c:\users\arnaugg1\documents\github\d_vj_18_19\14dev_class11_handout2(ui basics)\motor2d\j1uielement.cpp(72): error C2065: 'section': undeclared identifier
+c:\users\arnaugg1\documents\github\d_vj_18_19\14dev_class11_handout2(ui basics)\motor2d\j1uielement.cpp(72): error C2228: left of '.h' must have class/struct/union
+  c:\users\arnaugg1\documents\github\d_vj_18_19\14dev_class11_handout2(ui basics)\motor2d\j1uielement.cpp(72): note: type is 'unknown-type'
+c:\users\arnaugg1\documents\github\d_vj_18_19\14dev_class11_handout2(ui basics)\motor2d\j1uielement.cpp(76): error C2065: 'texture': undeclared identifier
+c:\users\arnaugg1\documents\github\d_vj_18_19\14dev_class11_handout2(ui basics)\motor2d\j1uielement.cpp(77): error C2065: 'position': undeclared identifier
+c:\users\arnaugg1\documents\github\d_vj_18_19\14dev_class11_handout2(ui basics)\motor2d\j1uielement.cpp(77): error C2228: left of '.x' must have class/struct/union
+  c:\users\arnaugg1\documents\github\d_vj_18_19\14dev_class11_handout2(ui basics)\motor2d\j1uielement.cpp(77): note: type is 'unknown-type'
+c:\users\arnaugg1\documents\github\d_vj_18_19\14dev_class11_handout2(ui basics)\motor2d\j1uielement.cpp(78): error C2065: 'position': undeclared identifier
+c:\users\arnaugg1\documents\github\d_vj_18_19\14dev_class11_handout2(ui basics)\motor2d\j1uielement.cpp(78): error C2228: left of '.y' must have class/struct/union
+  c:\users\arnaugg1\documents\github\d_vj_18_19\14dev_class11_handout2(ui basics)\motor2d\j1uielement.cpp(78): note: type is 'unknown-type'
+c:\users\arnaugg1\documents\github\d_vj_18_19\14dev_class11_handout2(ui basics)\motor2d\j1uielement.cpp(83): error C2653: 'UIElement': is not a class or namespace name
+c:\users\arnaugg1\documents\github\d_vj_18_19\14dev_class11_handout2(ui basics)\motor2d\j1uielement.cpp(85): error C2065: 'old_position': undeclared identifier
+c:\users\arnaugg1\documents\github\d_vj_18_19\14dev_class11_handout2(ui basics)\motor2d\j1uielement.cpp(85): error C2065: 'draw_positon': undeclared identifier
+c:\users\arnaugg1\documents\github\d_vj_18_19\14dev_class11_handout2(ui basics)\motor2d\j1uielement.cpp(88): error C2653: 'UIElement': is not a class or namespace name
+c:\users\arnaugg1\documents\github\d_vj_18_19\14dev_class11_handout2(ui basics)\motor2d\j1uielement.cpp(90): error C2065: 'old_position': undeclared identifier
+c:\users\arnaugg1\documents\github\d_vj_18_19\14dev_class11_handout2(ui basics)\motor2d\j1uielement.cpp(90): error C2065: 'draw_positon': undeclared identifier
+  Generating Code...

@@ -71,36 +71,37 @@ void j1Gui::ManageFocus()
 {
 }
 
-GUI_elem* j1Gui::AddUIElement(GUI_TYPE _type, SDL_Rect _source_elem_rect, iPoint _pos_on_screen, SDL_Texture * _texture, const char * _text)
+GUI_elem* j1Gui::AddUIElement(GUI_TYPE _type, iPoint _pos_on_screen)
 {
 	
 	GUI_elem* ret = new GUI_elem;
+
+	ret->type = _type;
+	ret->pos_on_screen = _pos_on_screen;
+
 	switch (_type)
 	{
 		case INTERACTIVE:
-			ret->type = _type;
-			ret->source_elem_rect = _source_elem_rect;
-			ret->pos_on_screen = _pos_on_screen;
-			ret->texture = _texture;
+		
+
 
 			break;
+
 		case NON_INTERACTIVE:
-			ret->type = _type;
-			ret->source_elem_rect = _source_elem_rect;
-			ret->pos_on_screen = _pos_on_screen;
-			ret->texture = _texture;
+	
+			ret->source_elem_rect = SDL_Rect({ 485, 829, 328, 103 });
 
 			break;
+
 		case TEXT:
-			ret->type = _type;
-			ret->source_elem_rect = _source_elem_rect;
-			ret->pos_on_screen = _pos_on_screen;
-			ret->text = _text;
+		
+
 
 			break;
+
 		case NONE:
-
 			break;
+
 		default:
 			break;
 	}
